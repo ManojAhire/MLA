@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Final Career Adventure Map</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fff7e6;--ink:#2b2340;--card:#fff;--line:#2b2340}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1830;--ink:#f4efff;--card:#2a2345;--line:#f4efff}}
+:root[data-theme="dark"]{--bg:#1d1830;--ink:#f4efff;--card:#2a2345;--line:#f4efff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;line-height:1.35}
+.wrap{max-width:820px;margin:0 auto;padding:16px}
+h1{font-size:2rem;text-align:center;margin:8px 0}
+.sub{text-align:center;margin:0 0 14px}
+.hero{background:linear-gradient(135deg,#ffd166,#ff8fab);color:#2b2340;border:4px solid #2b2340;border-radius:24px;padding:16px;text-align:center;box-shadow:6px 6px 0 #2b2340}
+.hero b.t{display:block;font-size:1.35rem;margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:8px}
+.chip{background:#fff;color:#2b2340;border:2px solid #2b2340;border-radius:99px;padding:3px 10px;font-size:.85rem}
+.bar{height:20px;border:3px solid var(--line);border-radius:99px;background:var(--card);overflow:hidden;margin:16px 0 4px}
+#fill{height:100%;width:0;background:linear-gradient(90deg,#06d6a0,#118ab2);transition:width .3s}
+.pct{text-align:center;font-size:.9rem;margin-bottom:10px}
+.stage{position:relative;margin:26px 0 0 22px;padding:14px 14px 12px;border:4px solid #2b2340;border-radius:22px;color:#2b2340;box-shadow:5px 5px 0 #2b2340}
+.stage::before{content:"";position:absolute;left:-22px;top:30px;bottom:-30px;border-left:6px dotted var(--line);z-index:-1}
+.stage.last::before{display:none}
+.badge{position:absolute;left:-40px;top:-14px;width:46px;height:46px;border-radius:50%;background:#2b2340;color:#fff;border:3px solid #fff;display:grid;place-items:center;font-weight:700;font-size:1.2rem}
+.stage h2{margin:0 0 2px 14px;font-size:1.2rem}
+.when{margin:0 0 6px 14px;font-size:.85rem;font-weight:600;opacity:.85}
+.stage ul{list-style:none;margin:0;padding:0}
+.stage li{background:rgba(255,255,255,.65);border-radius:12px;padding:6px 8px;margin:5px 0;font-size:.95rem}
+.stage label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.stage input{width:20px;height:20px;flex:none;accent-color:#2b2340;margin-top:1px}
+.s0{background:#ffd6e0}.s1{background:#ffe29a}.s2{background:#b8f2e6}.s3{background:#cdb4ff}.s4{background:#a9def9}.s5{background:#ffc8a2}.s6{background:#d0f4a5}.s7{background:#f9c6f0}.s8{background:#ffeb99}.s9{background:#c7f9cc}
+.card{background:var(--card);border:3px solid var(--line);border-radius:18px;padding:12px 14px;margin:16px 0}
+.card h3{margin:0 0 6px}
+.card ul{margin:0;padding-left:20px}
+.tier{display:flex;gap:8px;align-items:flex-start}
+.tier span.n{flex:none;font-weight:700;border-radius:10px;padding:2px 8px;border:2px solid #2b2340}
+</style></head><body><div class="wrap">
+<h1>🗺️ Your Final Career Adventure Map</h1>
+<p class="sub">From "resume rejected" ➜ "secure, well-paid engineer" 🚀</p>
+
+<div class="hero">
+<span>🎯 YOUR GLOBAL TITLE</span>
+<b class="t">Applied ML Systems Engineer (backend-first)</b>
+<span>Specialty: <b>Search &amp; Recommendation Systems</b></span><br>
+<span>🚪 First door: <b>Software Engineer Intern, Backend / Data Infra</b></span>
+<div class="chips"><span class="chip">🐍 Python + NumPy</span><span class="chip">🐘 Postgres</span><span class="chip">🟩 Node</span><span class="chip">📐 Linear Algebra + Stats</span><span class="chip">🧱 System Design</span></div>
+</div>
+
+<div class="card"><h3>🧠 Why this path?</h3><ul>
+<li><b>Anti-AI:</b> AI writes code. It can't decide ranking quality, design evaluations, or balance latency vs. accuracy.</li>
+<li><b>Math leverage:</b> Linear algebra → recommenders. Stats → A/B tests, metrics. Optimization → training.</li>
+<li><b>Low overload:</b> Only <b>NumPy</b> is new. Redis and Kafka stay as concepts.</li>
+<li><b>Backend-first = safety net:</b> If ML hiring dries up, you are already a backend engineer.</li>
+<li><b>Honest note:</b> No role is 100% AI-proof. This is among the most durable practical ones.</li>
+</ul></div>
+
+<div class="card"><h3>📘 Your PDF: what to follow</h3><ul>
+<li>✅ <b>Follow:</b> DSA M1–M3, System Design M1–M3, Full-Stack M2–M3 (deployed projects).</li>
+<li>🟡 <b>Light touch:</b> AI/ML M1–M2 only.</li>
+<li>⏭️ <b>Skip:</b> GATE-style Core CS track and ML specialization tracks.</li>
+</ul></div>
+
+<div class="bar"><div id="fill"></div></div>
+<div class="pct" id="pct">0% of quests done — tick the boxes!</div>
+<div class="pct" id="save-status" role="status" aria-live="polite"></div>
+
+<section class="stage s0"><div class="badge">0</div><h2>🔍 Quest 0: Face the Truth</h2><p class="when">Week 1 · Now</p><ul>
+<li><label><input type="checkbox">Remove projects you can't explain line by line.</label></li>
+<li><label><input type="checkbox">New rule: AI explains and reviews. <b>You type.</b></label></li>
+<li><label><input type="checkbox">Create LeetCode + GitHub profiles. Clean README habits.</label></li>
+</ul></section>
+
+<section class="stage s1"><div class="badge">1</div><h2>📄 Quest 1: Beat the Resume Screener</h2><p class="when">Weeks 1–2</p><ul>
+<li><label><input type="checkbox">One page, single column. No photos, icons or skill bars.</label></li>
+<li><label><input type="checkbox">Order: Education → Projects → Skills → Profiles.</label></li>
+<li><label><input type="checkbox">Every bullet: action + number. Ex: "Improved NDCG@10 from 0.31 to 0.42."</label></li>
+<li><label><input type="checkbox">Add Applied Math minor in one line.</label></li>
+<li><label><input type="checkbox">Mirror keywords from job posts (Backend, SQL, REST).</label></li>
+<li><label><input type="checkbox">Ask seniors for <b>referrals</b>. Stop blind portal applying.</label></li>
+</ul></section>
+
+<section class="stage s2"><div class="badge">2</div><h2>🧩 Quest 2: Rebuild the Core</h2><p class="when">Oct–Dec 2026 · ~1.5 hrs/day</p><ul>
+<li><label><input type="checkbox">Solve 100 LeetCode problems (Easy–Medium). Typed by you.</label></li>
+<li><label><input type="checkbox">Rule: stuck 20 min → hint → re-solve from scratch next day.</label></li>
+<li><label><input type="checkbox">Learn Postgres indexes + read EXPLAIN output.</label></li>
+<li><label><input type="checkbox">Attempt 2 LeetCode contests. No rating pressure yet.</label></li>
+</ul></section>
+
+<section class="stage s3"><div class="badge">3</div><h2>🔎 Quest 3: Project 1 — Mini Search Engine</h2><p class="when">Jan–Feb 2027</p><ul>
+<li><label><input type="checkbox">Inverted index + BM25 ranking, coded by you in Python.</label></li>
+<li><label><input type="checkbox">Store documents in Postgres. Simple API (Node or Python).</label></li>
+<li><label><input type="checkbox">Measure with <b>Precision@k and NDCG</b> on a small labelled set.</label></li>
+<li><label><input type="checkbox">README: architecture diagram, benchmarks, what failed and why.</label></li>
+<li><label><input type="checkbox">Deploy it. Link the live demo on your resume.</label></li>
+</ul></section>
+
+<section class="stage s4"><div class="badge">4</div><h2>🎬 Quest 4: Project 2 — Recommender + A/B Test</h2><p class="when">Mar–Apr 2027</p><ul>
+<li><label><input type="checkbox">Use the MovieLens dataset. Baseline: popularity ranking.</label></li>
+<li><label><input type="checkbox">Build matrix factorization with NumPy (linear algebra in action).</label></li>
+<li><label><input type="checkbox">Simulate an A/B test. Report significance, not just "it looks better."</label></li>
+<li><label><input type="checkbox">Write a short blog: "What I learned about ranking quality."</label></li>
+</ul></section>
+
+<section class="stage s5"><div class="badge">5</div><h2>⚔️ Quest 5: Interview Weapons</h2><p class="when">Apr–Jun 2027</p><ul>
+<li><label><input type="checkbox">Reach 250 LeetCode problems. Cover Trees, Graphs, DP basics.</label></li>
+<li><label><input type="checkbox">Learn LLD basics (OOP, SOLID) and HLD intro topics.</label></li>
+<li><label><input type="checkbox">Understand caching, DB indexing, SQL vs NoSQL. Redis/Kafka as concepts.</label></li>
+<li><label><input type="checkbox">Do 5 mock interviews. Think aloud. Say complexity before coding.</label></li>
+</ul></section>
+
+<section class="stage s6"><div class="badge">6</div><h2>💼 Quest 6: Internship #1</h2><p class="when">Apply Jan–Apr · Work May–Aug 2027</p><ul>
+<li><label><input type="checkbox">Target startups and mid-size firms. Role: Backend / Data Infra intern.</label></li>
+<li><label><input type="checkbox">Message 5 engineers per week: short, specific, link to project.</label></li>
+<li><label><input type="checkbox">Send 1–2 small open-source PRs (Python or Postgres tools).</label></li>
+<li><label><input type="checkbox">Goal: any real internship line on your resume. Perfection not needed.</label></li>
+</ul></section>
+
+<section class="stage s7"><div class="badge">7</div><h2>🏆 Quest 7: Google / FAANG Launch</h2><p class="when">Aug 2027–Jan 2028</p><ul>
+<li><label><input type="checkbox">Reach 400 problems with some Hard. Push toward 1700+ rating.</label></li>
+<li><label><input type="checkbox">Write one HLD design doc (e.g., search or feed ranking system).</label></li>
+<li><label><input type="checkbox">Practice HLD flow: requirements → estimation → design → trade-offs.</label></li>
+<li><label><input type="checkbox">Apply when intern applications open. Check <b>careers.google.com/students</b> for current India timelines.</label></li>
+</ul></section>
+
+<section class="stage s8"><div class="badge">8</div><h2>🪜 Quest 8: The Safety Ladder</h2><p class="when">Apply to all tiers in parallel</p><ul>
+<li><div class="tier"><span class="n">T1</span><span>Google, Microsoft, Amazon, Atlassian, Uber</span></div></li>
+<li><div class="tier"><span class="n">T2</span><span>Flipkart, Razorpay, PhonePe, Postman, CRED, Swiggy</span></div></li>
+<li><div class="tier"><span class="n">T3</span><span>Funded startups, Zoho, strong mid-size product firms</span></div></li>
+<li><label><input type="checkbox">Rejected? Wait out the cool-off, improve, reapply. Never stop applying.</label></li>
+</ul></section>
+
+<section class="stage s9 last"><div class="badge">9</div><h2>🛡️ Quest 9: Security Shield (forever)</h2><p class="when">Starts with your first paycheck</p><ul>
+<li><label><input type="checkbox">Save 6+ months of expenses. A layoff becomes a pause.</label></li>
+<li><label><input type="checkbox">Invest monthly in boring index funds. Compounding beats salary.</label></li>
+<li><label><input type="checkbox">Don't inflate lifestyle with every raise.</label></li>
+<li><label><input type="checkbox">Learn one meaningful skill per year. A few hours a week.</label></li>
+<li><label><input type="checkbox">Use AI as leverage: ship faster, still explain every line.</label></li>
+<li><label><input type="checkbox">Keep your network and profile fresh. Later, add a small side product.</label></li>
+</ul></section>
+
+<div class="card"><h3>💰 Money Reality (approximate)</h3><ul>
+<li>Reported ML engineer premium over software engineer: roughly 30–38% at the median (2026 US data).</li>
+<li>India figures vary widely by source and skew toward big tech. Don't plan around headline numbers.</li>
+<li>Check <b>levels.fyi</b> when you apply.</li>
+</ul></div>
+
+<div class="card"><h3>⚠️ Honest Caveats</h3><ul>
+<li>Nobody can guarantee a Google offer. Cycles and eligibility change yearly.</li>
+<li>Google's intern pipeline usually targets pre-final-year students. That's why startups come first.</li>
+<li>Consistency (1.5–2.5 hrs/day) beats 10-hour bursts.</li>
+<li>Build both projects yourself. Use AI only to review afterward.</li>
+</ul></div>
+</div>
+<script>
+(function(){
+var b=[].slice.call(document.querySelectorAll('input[type=checkbox]'));
+var key='career-adventure-map-progress-v1';
+var status=document.getElementById('save-status');
+function u(){
+  var d=b.filter(function(x){return x.checked}).length,p=Math.round(100*d/b.length);
+  document.getElementById('fill').style.width=p+'%';
+  document.getElementById('pct').textContent=p+'% of quests done ('+d+'/'+b.length+')'+(p==100?' 🎉 Offer time!':'');
+}
+try{
+  var saved=localStorage.getItem(key);
+  if(saved!==null){
+    var state=JSON.parse(saved);
+    if(!Array.isArray(state)||state.some(function(value){return typeof value!=='boolean'})){
+      throw new Error('Saved progress has an invalid format.');
+    }
+    b.forEach(function(box,index){box.checked=state[index]===true});
+  }
+  status.textContent=saved===null?'Your checkmarks will be saved on this device.':'Progress restored from this device.';
+}catch(error){
+  console.error('Unable to load saved progress:',error);
+  status.textContent='Unable to load saved progress. Your checkmarks may not persist in this browser.';
+}
+function save(){
+  try{
+    localStorage.setItem(key,JSON.stringify(b.map(function(box){return box.checked})));
+    status.textContent='Progress is saved on this device.';
+  }catch(error){
+    console.error('Unable to save progress:',error);
+    status.textContent='Unable to save progress. Check your browser storage settings.';
+  }
+}
+b.forEach(function(x){x.addEventListener('change',function(){u();save()})});
+u();
+})();
+</script></body></html>
